@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yussuf Maulid | Portfolio</title>
+
+  <!-- FIX: was href="css" — must be style.css -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar">
+  <div class="logo">Yussuf.</div>
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+  <div class="hero-text">
+    <h3>Hello, It's Me</h3>
+    <h1>Yussuf Maulid</h1>
+    <h2>I am a <span id="typing"></span></h2>
+    <p>
+      Passionate Frontend Developer, Data Analyst and Machine Learning student
+      creating responsive websites, modern digital experiences and forecasting.
+    </p>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+    <button id="darkModeBtn">Dark Mode</button>
+  </div>
+  <div class="hero-image">
+    <img src="assets/images/mimi.png" alt="Yussuf Maulid">
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+
+<section class="about" id="about">
+  <h2 class="about-text">About Me</h2>
+  <div class="hero-text">
+    <p>
+      I am a highly motivated individual with a strong passion for continuous learning
+      and growth in the fields of frontend development, data analysis and machine learning.
+      I enjoy building responsive and user-friendly web applications, exploring data to
+      uncover meaningful insights and developing intelligent models that solve real-world problems.
+    </p>
+    <br>
+    <p>
+      My goal is to combine creativity, analytical thinking and technical skills to deliver
+      impactful digital solutions and contribute to innovative technology projects.
+      I am always eager to learn new tools, improve my skills and collaborate on exciting projects.
+    </p>
+  </div>
+</section>
+
+<!-- ================= SKILLS ================= -->
+
+<section class="skills" id="skills">
+  <h2 class="about-text">Skills</h2>
+  <div class="skill-box">
+    <div class="skill">
+      <h3>HTML</h3>
+      <div class="bar"><span class="html"></span></div>
+    </div>
+    <div class="skill">
+      <h3>CSS</h3>
+      <div class="bar"><span class="css"></span></div>
+    </div>
+    <div class="skill">
+      <h3>JavaScript</h3>
+      <div class="bar"><span class="js"></span></div>
+    </div>
+    <div class="skill">
+      <h3>Python</h3>
+      <div class="bar"><span class="python"></span></div>
+    </div>
+    <div class="skill">
+      <h3>Data Analysis</h3>
+      <div class="bar"><span class="analysis"></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+
+<section class="projects" id="projects">
+  <h2 class="about-text">Projects</h2>
+  <div class="project-container">
+    <div class="project-card">
+      <img src="assets/images/project6.png" alt="Portfolio Website">
+      <h3>Portfolio Website</h3>
+      <p>Responsive frontend portfolio website.</p>
+    </div>
+    <div class="project-card">
+      <img src="assets/images/project5.png" alt="Sales Dashboard">
+      <h3>Sales Dashboard</h3>
+      <p>Data analysis dashboard using Power BI.</p>
+    </div>
+    <div class="project-card">
+      <img src="assets/images/project4.jpg" alt="Student Analysis">
+      <h3>Student Analysis</h3>
+      <p>Python project for student performance analysis.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+
+<section class="contact" id="contact">
+  <h2 class="about-text">Contact Me</h2>
+  <form id="contactForm">
+    <input type="text"  id="contactName"    placeholder="Your Name"  required>
+    <input type="email" id="contactEmail"   placeholder="Your Email" required>
+    <textarea           id="contactMessage" placeholder="Message"    required></textarea>
+    <button type="submit">Send Message</button>
+    <div id="responseMessage" style="margin-top:10px;"></div>
+  </form>
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+  <p>© 2026 Yussuf Maulid | All Rights Reserved</p>
+</footer>
+
+<!-- API base URL — change to your deployed server URL when hosting -->
+<script>
+  window.API_BASE = window.API_BASE || 'http://127.0.0.1:5000/api';
+</script>
+
+<!-- FIX: was src="JS" — must be main.js -->
+<script src="main.js"></script>
+
+</body>
+</html>

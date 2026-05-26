@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin — Contact Messages</title>
+
+  <!-- FIX: was href="css" — must be style.css -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">Yussuf.</div>
+    <ul class="nav-links">
+      <li><a href="index.html">← Back to Portfolio</a></li>
+    </ul>
+  </nav>
+
+  <section class="admin">
+    <h2 class="about-text">Admin — Contact Messages</h2>
+    <p>View messages submitted through the contact form and send replies.</p>
+
+    <div id="adminStatus" style="margin-bottom:20px; text-align:center; font-weight:bold;"></div>
+    <div id="messagesList"></div>
+  </section>
+
+  <footer>
+    <p>© 2026 Yussuf Maulid | All Rights Reserved</p>
+  </footer>
+
+  <!-- API base URL — change to your deployed server URL when hosting -->
+  <script>
+    window.API_BASE = window.API_BASE || 'http://127.0.0.1:5000/api';
+  </script>
+
+  <!-- FIX: was src="admin.js" — already correct, but now the file is properly written -->
+  <script src="admin.js"></script>
+
+</body>
+</html>
