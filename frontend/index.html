@@ -141,10 +141,8 @@
   <p>© 2026 Yussuf Maulid | All Rights Reserved</p>
 </footer>
 
-<!-- API base URL — change to your deployed server URL when hosting -->
-<script>
-  window.API_BASE = window.API_BASE || 'http://127.0.0.1:5000/api';
-</script>
+<!-- Load config first to set API_BASE -->
+<script src="config.js"></script>
 
 <!-- FIX: was src="JS" — must be main.js -->
 <script src="main.js"></script>
